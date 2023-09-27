@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: golang-ex
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/mdsaud-tenant/del-temp/golang-ex@sha256:d47a1493f7cbee76184f505531f6fdf51bf375aa615800a10d1f1440f019342c
+        name: my-go
+        resources: {}
+status: {}
